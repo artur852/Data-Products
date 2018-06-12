@@ -1,0 +1,17 @@
+---
+title: "Leaflet Exercise"
+author: "Artur Costa"
+date: "June 12, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r echo = FALSE}
+library(leaflet)
+mymap <- leaflet() %>% addTiles() %>% addMarkers(lat = 37.386515, lng = -122.060840, popup = "Coursera's Headquarters")
+mymap
+```
+
